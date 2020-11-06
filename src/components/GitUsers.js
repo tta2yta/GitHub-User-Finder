@@ -78,9 +78,9 @@ return()=>{
                 <div className="user-repos">
                 <h4>{item.name}</h4>
                 <div className="repos-items">
-                <span>Stars: {item.stargazers_count}</span>
-                <span> Watches: {item.watchers_count}</span>
-                <span>Forks:{item.forks}</span>
+                <span className="stars">Stars: {item.stargazers_count}</span>
+                <span className="watches"> Watches: {item.watchers_count}</span>
+                <span className="forks">Forks:{item.forks}</span>
                 </div>
                 
                 {console.log(item)}
