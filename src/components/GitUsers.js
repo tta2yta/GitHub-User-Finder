@@ -57,15 +57,27 @@ return()=>{
                 <li> <label>Puplic Repostories: </label>{gitUsers.html_url}</li>
                 <li><label>Puplic Repostories: </label>{gitUsers.public_repos}</li>
             </ul>
-            {userRepos.map(ietm=>{
-                  <div className="user-repos">
-                  <h4>Repo Name</h4>
-                  <span>Stars: 1</span>
-                  <span> Watches: 1</span>
-                  <span>Forks:1</span>
-              </div>
+            <h2>User Repos</h2>
+            {userRepos.map(item=>(
+                <div className="user-repos">
+                <h4>{item.name}</h4>
+                <span>Stars: {item.stargazers_count}</span>
+                <span> Watches: {item.watchers_count}</span>
+                <span>Forks:{item.forks}</span>
+                {console.log(item)}
+            </div>
+            //     item.map(li=>{
+            //     <div className="user-repos">
+            //       <h4>Repo Name</h4>
+            //       <span>Stars: 1</span>
+            //       <span> Watches: 1</span>
+            //       <span>Forks:1</span>
+            //   </div>
+            //     })
 
-            })}
+                  
+
+            ))}
           
             </div>
            
