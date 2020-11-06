@@ -93,3 +93,15 @@ h4{
 .forks{
   background-color: rgb(6, 177, 14);
 }
+
+@media only screen and (max-width: 600px) {
+  .Main{
+    max-width: 100%;
+   }
+   .left{
+     display: none;
+   }
+   .right{
+    display: none;
+  }
+}
