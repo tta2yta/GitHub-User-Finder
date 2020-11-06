@@ -17,6 +17,10 @@ fetch(`https://api.github.com/users/${e.target.value}`)
     .then(response=>response.json())
     .then(data=>{console.log(data); setGitUsers(data)});
 }
+fetch(`https://api.github.com/users/${e.target.value}/repos`)
+    .then(response=>response.json())
+    .then(data=>{console.log(data); setGitUsers(data)});
+}
 
 useEffect(()=>{
     fetch("https://api.github.com/users/tta2yta")
