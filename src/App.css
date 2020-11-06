@@ -60,20 +60,34 @@ ul li{
 }
 .user-repos span{
 border-radius: 8px;
-background-color: yellow;
+/* background-color: yellow; */
 margin-right: 10px;
+padding: 0 5px 0 5px;
 }
 h2{
   text-align: left;
-  margin-left: 20px;
+  margin-left: 30px;
 }
 .user-repos{
   text-align: left;
-  margin-left: 20px;
+  margin-left: 30px;
+  border: 1px solid black;
+  margin-bottom: 5px;
+  width: 80%;
+  padding: 5px;
 }
 h4{
   margin-bottom: 5px;
 }
 .repos-items{
   margin-top: 0;
+}
+.stars{
+  background-color: yellow;
+}
+.watches{
+  background-color: rgb(91, 22, 105);
+}
+.forks{
+  background-color: rgb(6, 177, 14);
 }
