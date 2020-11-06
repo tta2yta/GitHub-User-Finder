@@ -70,10 +70,10 @@ return()=>{
                 <ul>
                 <li> <label>Name: </label>{gitUsers.name}</li>
                 <li> <label>Github UserName: </label> {gitUsers.login}</li>
-                <li> <label>Puplic Repostories: </label>{gitUsers.html_url}</li>
+                <li> <label>Puplic Repostories Url: </label>{gitUsers.html_url}</li>
                 <li><label>Puplic Repostories: </label>{gitUsers.public_repos}</li>
             </ul>
-            <h2>User Repos</h2>
+            <h2>Latest 5 User Repos</h2>
             {userRepos.map(item=>(
                 <div className="user-repos">
                 <h4>{item.name}</h4>

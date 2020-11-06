@@ -59,8 +59,15 @@ ul li{
   margin-bottom: 15px;
 }
 .user-repos span{
-border-radius: 10px;
+border-radius: 8px;
 background-color: yellow;
-padding: 5px;
-margin-right: 2px;
+margin-right: 10px;
+}
+h2{
+  text-align: left;
+  margin-left: 20px;
+}
+.user-repos{
+  text-align: left;
+  margin-left: 20px;
 }
