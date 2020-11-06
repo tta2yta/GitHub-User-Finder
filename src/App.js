@@ -17,8 +17,8 @@ function App() {
     </div>
     <div className="footer">
       <div className="left"></div>
-      <div className="center">
-      <header className="footer-center"><h2>GetHub User Finder</h2></header>
+      <div className="footer-center">
+      <header className="footer-center-header"><h2>GetHub User Finder</h2></header>
       </div>
       <div className="right"></div>
       
