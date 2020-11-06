@@ -12,7 +12,7 @@ export default function GitUsers() {
     }
 
     const sortUserRepo=(data)=>{
-        console.log(data)
+        console.log(data.length)
         data.sort((a, b)=>{
             //console.log(a.created_at)
             if (a.created_at < b.created_at)
@@ -20,7 +20,11 @@ export default function GitUsers() {
             else
             return -1
         })
+        if(data. length >= 5)
+        setUserRepos(data.slice(0, 5))
+        else
         setUserRepos(data)
+
     }
 
 const handleFindGitUser=(e)=>{
