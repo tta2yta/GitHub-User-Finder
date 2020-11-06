@@ -11,6 +11,18 @@ export default function GitUsers() {
         setGitUserName(e.target.value)
     }
 
+    const sortUserRepo=(data)=>{
+        console.log(data)
+        data.sort((a, b)=>{
+            //console.log(a.created_at)
+            if (a.created_at < b.created_at)
+            return  1 
+            else
+            return -1
+        })
+        setUserRepos(data)
+    }
+
 const handleFindGitUser=(e)=>{
 //setGitUserName(e.target.value)
 fetch(`https://api.github.com/users/${e.target.value}`)
@@ -19,7 +31,7 @@ fetch(`https://api.github.com/users/${e.target.value}`)
 
     fetch("https://api.github.com/users/tta2yta/repos")
     .then(response=>response.json())
-    .then(data=>{console.log(data); setUserRepos(data)});
+    .then(data=>{console.log(data); sortUserRepo(data) });
 }
 
 
