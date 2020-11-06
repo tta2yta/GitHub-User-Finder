@@ -48,6 +48,12 @@ return()=>{
                 <li> <label>Puplic Repostories: </label>{gitUsers.html_url}</li>
                 <li><label>Puplic Repostories: </label>{gitUsers.public_repos}</li>
             </ul>
+            <div className="user-repos">
+                <h4>Repo Name</h4>
+                <span>Stars: 1</span>
+                <span> Watches: 1</span>
+                <span>Forks:1</span>
+            </div>
             </div>
            
             {/* })} */}
