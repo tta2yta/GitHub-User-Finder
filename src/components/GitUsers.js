@@ -19,11 +19,14 @@ useEffect(()=>{
             {/* {gitUsers.map(item=>{ */}
                 <div className="gituser-list">
                 <img src={gitUsers.avatar_url} wrapped ui={false}/><br/>
-                <label>Name: </label>{gitUsers.name}<br/>
-                <label>Github UserName: </label>{gitUsers.login}<br/>
-                <label>Github URL: </label>{gitUsers.html_url}<br/>
-                <label>Puplic Repostories: </label>{gitUsers.public_repos}<br/>
+                <ul>
+                <li> <label>Name: </label>{gitUsers.name}</li>
+                <li> <label>Github UserName: </label> {gitUsers.login}</li>
+                <li> <label>Puplic Repostories: </label>{gitUsers.html_url}</li>
+                <li><label>Puplic Repostories: </label>{gitUsers.public_repos}</li>
+            </ul>
             </div>
+           
             {/* })} */}
             
         </div>
