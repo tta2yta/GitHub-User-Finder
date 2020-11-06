@@ -16,11 +16,14 @@ const handleFindGitUser=(e)=>{
 fetch(`https://api.github.com/users/${e.target.value}`)
     .then(response=>response.json())
     .then(data=>{console.log(data); setGitUsers(data)});
-}
-fetch(`https://api.github.com/users/${e.target.value}/repos`)
+
+    fetch("https://api.github.com/users/tta2yta/repos")
     .then(response=>response.json())
-    .then(data=>{console.log(data); setGitUsers(data)});
+    .then(data=>{console.log(data); setUserRepos(data)});
 }
+
+
+
 
 useEffect(()=>{
     fetch("https://api.github.com/users/tta2yta")
@@ -40,6 +43,7 @@ return()=>{
     return (
         <div className="git-user">
             {console.log(gitUsers)}
+            {console.log(userRepos)}
             <form className="form">
                 <label>Please Enter Github UserName: </label>
                 <input type="text" name="username" id="username" value={gitusername} onChange={handleGtUserName} />
@@ -53,12 +57,16 @@ return()=>{
                 <li> <label>Puplic Repostories: </label>{gitUsers.html_url}</li>
                 <li><label>Puplic Repostories: </label>{gitUsers.public_repos}</li>
             </ul>
-            <div className="user-repos">
-                <h4>Repo Name</h4>
-                <span>Stars: 1</span>
-                <span> Watches: 1</span>
-                <span>Forks:1</span>
-            </div>
+            {userRepos.map(ietm=>{
+                  <div className="user-repos">
+                  <h4>Repo Name</h4>
+                  <span>Stars: 1</span>
+                  <span> Watches: 1</span>
+                  <span>Forks:1</span>
+              </div>
+
+            })}
+          
             </div>
            
             {/* })} */}
