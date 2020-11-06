@@ -11,9 +11,9 @@ useEffect(()=>{
 },[])
 
     return (
-        <div>
+        <div className="git-user">
             {console.log(gitUsers)}
-            <form>
+            <form className="form">
                 <label>Please Enter Github UserName</label><input type="text" value="" onChange="" />
             </form>
             {/* {gitUsers.map(item=>{ */}
