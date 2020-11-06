@@ -17,7 +17,7 @@ useEffect(()=>{
                 <label>Please Enter Github UserName</label><input type="text" value="" onChange="" />
             </form>
             {/* {gitUsers.map(item=>{ */}
-                <div className="">
+                <div className="gituser-list">
                 <img src={gitUsers.avatar_url} wrapped ui={false}/><br/>
                 <label>Name: </label>{gitUsers.name}<br/>
                 <label>Github UserName: </label>{gitUsers.login}<br/>
