@@ -36,7 +36,7 @@ return()=>{
         <div className="git-user">
             {console.log(gitUsers)}
             <form className="form">
-                <label>Please Enter Github UserName</label>
+                <label>Please Enter Github UserName: </label>
                 <input type="text" name="username" id="username" value={gitusername} onChange={handleGtUserName} />
             </form>
             {/* {gitUsers.map(item=>{ */}
