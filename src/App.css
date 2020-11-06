@@ -1,7 +1,9 @@
-.Main{
+.Main, .footer{
  display: flex;
  flex-direction: row;
  width: 100%;
+ margin-bottom: 0;
+ margin-top: 0;
 }
 .left{
   width: 20%;
@@ -13,7 +15,7 @@
   width: 20%;
 }
 
-.header{
+.header, .footer-center{
   display: flex;
   flex-direction: row;
   height: 100px;
@@ -103,5 +105,8 @@ h4{
    }
    .right{
     display: none;
+  }
+  .center{
+    width: 100%;
   }
 }

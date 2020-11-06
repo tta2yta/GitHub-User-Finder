@@ -4,6 +4,7 @@ import GitUsers from './components/GitUsers';
 
 function App() {
   return (
+    <div className="container">
     <div className="Main">
       <div className="left"></div>
       <div className="center">
@@ -13,6 +14,16 @@ function App() {
       <div className="right"></div>
       
     
+    </div>
+    <div className="footer">
+      <div className="left"></div>
+      <div className="center">
+      <header className="footer-center"><h2>GetHub User Finder</h2></header>
+      </div>
+      <div className="right"></div>
+      
+    
+    </div>
     </div>
   );
 }
