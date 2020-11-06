@@ -16,6 +16,16 @@ useEffect(()=>{
             <form>
                 <label>Please Enter Github UserName</label><input type="text" value="" onChange="" />
             </form>
+            {/* {gitUsers.map(item=>{ */}
+                <div className="">
+                <image src={gitUsers.avatar_url}></image><br/>
+                <label>Name: </label>{gitUsers.name}<br/>
+                <label>Github UserName: </label>{gitUsers.login}<br/>
+                <label>Github URL: </label>{gitUsers.html_url}<br/>
+                <label>Puplic Repostories: </label>{gitUsers.public_repos}<br/>
+            </div>
+            {/* })} */}
+            
         </div>
     )
 }
