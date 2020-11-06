@@ -18,7 +18,7 @@ useEffect(()=>{
             </form>
             {/* {gitUsers.map(item=>{ */}
                 <div className="">
-                <image src={gitUsers.avatar_url}></image><br/>
+                <img src={gitUsers.avatar_url} wrapped ui={false}/><br/>
                 <label>Name: </label>{gitUsers.name}<br/>
                 <label>Github UserName: </label>{gitUsers.login}<br/>
                 <label>Github URL: </label>{gitUsers.html_url}<br/>
