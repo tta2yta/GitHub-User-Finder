@@ -71,3 +71,9 @@ h2{
   text-align: left;
   margin-left: 20px;
 }
+h4{
+  margin-bottom: 5px;
+}
+.repos-items{
+  margin-top: 0;
+}
