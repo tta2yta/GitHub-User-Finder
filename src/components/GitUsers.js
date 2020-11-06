@@ -3,6 +3,7 @@ import React, {useState, useEffect} from 'react'
 export default function GitUsers() {
 
     const[gitUsers, setGitUsers]=useState([]);
+    const[userRepos, setUserRepos]=useState([])
    // const[gitUserSearch, setGitUserSearch]=useState('')
     const[gitusername, setGitUserName]=useState('')
 
