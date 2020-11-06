@@ -74,10 +74,12 @@ h2{
   border: 1px solid black;
   margin-bottom: 5px;
   width: 80%;
-  padding: 5px;
+  padding: 20px 5px 5px 20px;
+  background-color: rgb(39, 9, 121);
 }
 h4{
   margin-bottom: 5px;
+ margin-top: 0;
 }
 .repos-items{
   margin-top: 0;

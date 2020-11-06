@@ -12,7 +12,9 @@ export default function GitUsers() {
     }
 
     const sortUserRepo=(data)=>{
-        console.log(data.length)
+        if(gitusername==="")
+        return;
+        console.log(data)
         data.sort((a, b)=>{
             //console.log(a.created_at)
             if (a.created_at < b.created_at)
@@ -33,7 +35,7 @@ fetch(`https://api.github.com/users/${e.target.value}`)
     .then(response=>response.json())
     .then(data=>{console.log(data); setGitUsers(data)});
 
-    fetch("https://api.github.com/users/tta2yta/repos")
+    fetch(`https://api.github.com/users/${e.target.value}/repos`)
     .then(response=>response.json())
     .then(data=>{console.log(data); sortUserRepo(data) });
 }
@@ -82,8 +84,7 @@ return()=>{
                 <span className="watches"> Watches: {item.watchers_count}</span>
                 <span className="forks">Forks:{item.forks}</span>
                 </div>
-                
-                {console.log(item)}
+            
             </div>
             //     item.map(li=>{
             //     <div className="user-repos">
